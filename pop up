@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+<body>
+    <h1>Click the link below:</h1>
+    <a href="#" id="hackLink">Click me!</a>
+
+    <script>
+        // Add a click event listener to the link
+        document.getElementById("hackLink").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior
+            alert("YOU ARE HACKED");
+        });
+    </script>
+</body>
+</html>
